@@ -1,8 +1,8 @@
 class JxCli < Formula
   desc "a simple small new modular CLI for Jenkins X v3"
   homepage "https://github.com/jenkins-x/jx-cli"
-  url "https://github.com/jenkins-x/jx-cli/releases/download/3.1.137/jx-cli-darwin-amd64.tar.gz"
-  sha256 "5afd3222c476375c21e7f510b6c41165f0d52cf293884637e2813a5d0295620e"
+  url "https://github.com/jenkins-x/jx-cli/releases/download/v3.1.148/jx-cli-darwin-amd64.tar.gz"
+  sha256 "0ae49465585882eed8de2b59cd261e83775a2c9c9e80aab7e94f76388b83bd41"
   license "Apache-2.0"
 
 
