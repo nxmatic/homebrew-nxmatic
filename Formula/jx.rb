@@ -1,18 +1,17 @@
-class JxCli < Formula
+class Jx < Formula
   desc "a simple small new modular CLI for Jenkins X v3"
-  homepage "https://github.com/jenkins-x/jx-cli"
-  url "https://github.com/jenkins-x/jx-cli/releases/download/v3.1.226/jx-cli-darwin-amd64.tar.gz"
-  sha256 "745ba405c923e65dda7df6e835cd91b1666b1055920ecadbfac7c734db624e4e"
+  homepage "https://github.com/jenkins-x/jx"
+  url "https://github.com/jenkins-x/jx/releases/download/v3.2.196/jx-darwin-amd64.tar.gz"
+  sha256 "71d728966a4afd2cbc7cbc047e455446ae7157215597e84f437de4fd636d7d77"
   license "Apache-2.0"
 
 
   # depends_on "cmake" => :build
 
   def install
-    mv "jx", "jx-cli"
-    bin.install "jx-cli"
-    output = Utils.popen_read("SHELL=bash #{bin}/jx-cli completion bash")
-    (bash_completion/"jx-cli").write output
+    bin.install "jx"
+    output = Utils.popen_read("SHELL=bash #{bin}/jx completion bash")
+    (bash_completion/"jx").write output
 
     prefix.install_metafiles
   end
